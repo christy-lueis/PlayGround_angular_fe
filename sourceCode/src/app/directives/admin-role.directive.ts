@@ -15,7 +15,7 @@ export class AdminRoleDirective {
    
     effect(()=>{
       console.log('role',this.role());
-      if(this.role()=='admin')
+      if(this.role()=='agent')
         {
       console.log('true',this.role());
 

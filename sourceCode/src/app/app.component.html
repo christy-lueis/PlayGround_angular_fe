@@ -179,8 +179,12 @@
 
 <main class="main">
   <div class="content">
-    <ng-template appAdminRole="agent"><h1>hello</h1></ng-template>
-   
+    <ng-template appAdminRole="agent"><h1>hello agent</h1></ng-template>
+    <ng-template appAdminRole="admin"><h1>hello admin</h1></ng-template>
+    <ng-template appAdminRole="customer"><h1>hello customer</h1></ng-template>
+    <h1 *appAdminRole="'admin'">hello admin</h1>
+    <h1 *appAdminRole="'agent'">hello agent</h1>
+    <h1 *appAdminRole="'customer'">hello customer</h1>
     <div  class="left-side">
       <svg 
         xmlns="http://www.w3.org/2000/svg"
